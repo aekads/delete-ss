@@ -53,7 +53,7 @@ async function downloadAssetsByDateRange() {
 }
 
 downloadAssetsByDateRange();
-
+setInterval(downloadAssetsByDateRange, 10 * 60 * 1000); // every 10 minutes
 
 
 
